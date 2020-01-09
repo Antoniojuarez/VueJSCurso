@@ -1,0 +1,16 @@
+Vue.js
+
+Html
+
+	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder
+	+	v-on -> Instruccion que alerta a Vue de que tiene que saltar un evento
+		-	:****="" -> Se añade los dos puntos y el tipo de elemento sobre el que tiene que saltar la accion y se indica el nombre del metodo que controlara el evento
+
+Javascript
+
+new Vue({
+	el: -> hace referencia al "id" del elemento sobre el que se va a trabajar
+	data: -> Informacion a utilizar en ese elemento
+	methods: -> Dentro de este apartado se definen los metodos llamados desde html
+		- para acceder a un elemento de data se utilizara this.nombreCampo
+}) -> Instancia objeto Vue que controlara el javascript
