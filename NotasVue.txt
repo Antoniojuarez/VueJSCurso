@@ -1,8 +1,14 @@
 Vue.js
 
+Teoria
+
+VueJs actua como intermediario entre el codigo html original y el mostrado en pantalla, vue genera una plantilla a partir del codigo html original, la renderiza y es lo que muestra el navegador.
+Si inspeccionamos una pagina web de VueJs no veremos el codigo html de desarrollo si no el interpretado y generado por Vue
+
 Html
 
-	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder
+	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder.
+				 Tambien puede acceder a los elementos de methods llamandolos con () al final. Se pueden llamar metodos los cuales devuelvan un string
 	+	v-on -> Instruccion que alerta a Vue de que tiene que saltar un evento
 		-	:****="" -> Se añade los dos puntos y el tipo de elemento sobre el que tiene que saltar la accion y se indica el nombre del metodo que controlara el evento
 
