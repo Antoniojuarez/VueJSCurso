@@ -9,8 +9,12 @@ Html
 
 	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder.
 				 Tambien puede acceder a los elementos de methods llamandolos con () al final. Se pueden llamar metodos los cuales devuelvan un string
+				 Solo se pueden utilizar en sitios donde se pueda escribir un tag, no se puede utilizar en elementos html como "href", o "name"
 	+	v-on -> Instruccion que alerta a Vue de que tiene que saltar un evento
 		-	:****="" -> Se añade los dos puntos y el tipo de elemento sobre el que tiene que saltar la accion y se indica el nombre del metodo que controlara el evento
+	+	v-bind -> Indica que el siguiente elemento html no debe ser tratado de forma directa si no que tiene que interpretarlo vue, de esta manera podremos llamar a elementos de la instancia de Vue
+				  sin necesidad de utilizar {{ }}
+		-	:href="" -> Para añadir un enlace
 
 Javascript
 
