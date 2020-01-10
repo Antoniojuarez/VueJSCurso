@@ -15,6 +15,7 @@ Html
 	+	v-bind -> Indica que el siguiente elemento html no debe ser tratado de forma directa si no que tiene que interpretarlo vue, de esta manera podremos llamar a elementos de la instancia de Vue
 				  sin necesidad de utilizar {{ }}
 		-	:href="" -> Para añadir un enlace
+	+	v-once -> Hace que el elemento entre {{ }} no vuelva a ser renderizado en pantalla en caso de que sufra algun cambio en el codigo, de tal manera podremos con una variable mostrar dos valores
 
 Javascript
 
