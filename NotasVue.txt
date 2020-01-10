@@ -5,6 +5,8 @@ Teoria
 VueJs actua como intermediario entre el codigo html original y el mostrado en pantalla, vue genera una plantilla a partir del codigo html original, la renderiza y es lo que muestra el navegador.
 Si inspeccionamos una pagina web de VueJs no veremos el codigo html de desarrollo si no el interpretado y generado por Vue
 
+VueJS solo permite renderizar texto, no permite renderizar elementos html. Con esto evitamos los ataques cross site scripting por los que nos pueden añadir codigo a la pagina html.
+
 Html
 
 	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder.
@@ -16,6 +18,7 @@ Html
 				  sin necesidad de utilizar {{ }}
 		-	:href="" -> Para añadir un enlace
 	+	v-once -> Hace que el elemento entre {{ }} no vuelva a ser renderizado en pantalla en caso de que sufra algun cambio en el codigo, de tal manera podremos con una variable mostrar dos valores
+	+	v-html -> Para poder añadir codigo html dinamicamente, hay que utilizarlo con cuidado ya que nos exponemos a ataques cross site scripting
 
 Javascript
 
