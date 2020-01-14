@@ -31,3 +31,5 @@ new Vue({
 
 	* Eventos
 		En la parte javascript se declaran los metodos que saltaran al ser escuchados por el comando v-on en el html. Todos los metodos pueden tener el parametro event, que recogera datos del objeto que lanza el evento
+		Si queremos pasar un argumento propio se utiliara la nomenclatura "metodo(argumento, $event)" en el html, de esta manera estamos pasando nuestro argumento y el propio argumento event. El $event es una palabra reservada
+		por lo que no se debe sobreescribir. Una vez en javascript indicaremos nuestro argumento con la nomenclatura function(argumento, event)
