@@ -12,9 +12,9 @@ Html
 	+	{{ }} -> Dentro se indica el elemento de data al que se quiere acceder.
 				 Tambien puede acceder a los elementos de methods llamandolos con () al final. Se pueden llamar metodos los cuales devuelvan un string
 				 Solo se pueden utilizar en sitios donde se pueda escribir un tag, no se puede utilizar en elementos html como "href", o "name"
-	+	v-on -> Instruccion que alerta a Vue de que tiene que saltar un evento
+	+	v-on (se puede usar @)-> Instruccion que alerta a Vue de que tiene que saltar un evento
 		-	:****="" -> Se añade los dos puntos y el tipo de elemento sobre el que tiene que saltar la accion y se indica el nombre del metodo que controlara el evento
-	+	v-bind -> Indica que el siguiente elemento html no debe ser tratado de forma directa si no que tiene que interpretarlo vue, de esta manera podremos llamar a elementos de la instancia de Vue
+	+	v-bind (se puede usar :) -> Indica que el siguiente elemento html no debe ser tratado de forma directa si no que tiene que interpretarlo vue, de esta manera podremos llamar a elementos de la instancia de Vue
 				  sin necesidad de utilizar {{ }}
 		-	:href="" -> Para añadir un enlace
 	+	v-once -> Hace que el elemento entre {{ }} no vuelva a ser renderizado en pantalla en caso de que sufra algun cambio en el codigo, de tal manera podremos con una variable mostrar dos valores
@@ -56,3 +56,10 @@ new Vue({
 		Estas funciones se pueden utilizar como si fueran un parametro mas de "data", pero tienen la ventaja de que solo se lanzan cuando la recarga del html afecte a algun parametro que sea utilizado en esa funcion, evitando
 		relanzar la funcion cuando no sea necesario.
 		Siempre necesita sincronizidad.
+	* Watch
+		La alternativa a las computed properties son los watch, estos si que pueden funcionar de manera asincrona, se añade un campo nuevo al new Vue
+																																		watch: {
+																																			property: function(value) {
+																																			}
+																																		},
+		Estos funcionan de manera inversa a las computed properties, esperan que la propiedad cambie para lanzar el metodo llamado como ella.
