@@ -55,3 +55,4 @@ new Vue({
 																														},
 		Estas funciones se pueden utilizar como si fueran un parametro mas de "data", pero tienen la ventaja de que solo se lanzan cuando la recarga del html afecte a algun parametro que sea utilizado en esa funcion, evitando
 		relanzar la funcion cuando no sea necesario.
+		Siempre necesita sincronizidad.
