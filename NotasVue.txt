@@ -37,3 +37,5 @@ new Vue({
 		
 		- Si queremos detener un evento en una parte concreta de un elemento html, generamos una funcion que no haga nada y añadimos el metodo event.stopPropagation para que en el elemento general siga funcionando el evento.
 		Se puede simplificar añadiendo al elemento html el atributo v-on:evento.stop="", esto evita tener que realizar la funcion anteriormente mencionada.
+		
+		- Los eventos de teclado funcionan con el atributo "v-on:keyup" si queremos que cualquier tecla pulsada lanze el evento, podemos personalizarlo concatenando con puntos las teclas concretas "v-on:keyup.enter.space"
