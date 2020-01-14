@@ -19,6 +19,7 @@ Html
 		-	:href="" -> Para añadir un enlace
 	+	v-once -> Hace que el elemento entre {{ }} no vuelva a ser renderizado en pantalla en caso de que sufra algun cambio en el codigo, de tal manera podremos con una variable mostrar dos valores
 	+	v-html -> Para poder añadir codigo html dinamicamente, hay que utilizarlo con cuidado ya que nos exponemos a ataques cross site scripting
+	+	Vue permite añadir codigo javascript directamente en la plantilla
 
 Javascript
 
