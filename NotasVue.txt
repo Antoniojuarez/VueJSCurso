@@ -28,3 +28,6 @@ new Vue({
 	methods: -> Dentro de este apartado se definen los metodos llamados desde html
 		- para acceder a un elemento de data se utilizara this.nombreCampo
 }) -> Instancia objeto Vue que controlara el javascript
+
+	* Eventos
+		En la parte javascript se declaran los metodos que saltaran al ser escuchados por el comando v-on en el html. Todos los metodos pueden tener el parametro event, que recogera datos del objeto que lanza el evento
