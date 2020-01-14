@@ -42,3 +42,6 @@ new Vue({
 		- Los eventos de teclado funcionan con el atributo "v-on:keyup" si queremos que cualquier tecla pulsada lanze el evento, podemos personalizarlo concatenando con puntos las teclas concretas "v-on:keyup.enter.space"
 		
 		- Para recoger el valor de una tecla pulsada event.target.value
+	
+	* Two-way-binding
+		- Si a un input le añadimos el atributo v-model, este nos permite rellenarlo con el valor de un parametro de "data", pero si cambiamos el valor de este input tambien estaremos cambiado el valor del parametro de "data".
