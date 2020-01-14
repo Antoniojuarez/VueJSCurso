@@ -45,3 +45,13 @@ new Vue({
 	
 	* Two-way-binding
 		- Si a un input le añadimos el atributo v-model, este nos permite rellenarlo con el valor de un parametro de "data", pero si cambiamos el valor de este input tambien estaremos cambiado el valor del parametro de "data".
+	
+	* ComputedProperties
+		Siempre que se lanze un evento en nuestro documento Html, se llamaran a todos los metodos que encontremos en este documento html. Esto puede ser un problema si estos metodos tienen una carga importante de tiempo.
+		Esto se puede solucionar utilizando las computedProperties, para ello añadimos un campo nuevo al new Vue, junto el, data y methods
+																														computed: {
+																															property: function() {
+																															}
+																														},
+		Estas funciones se pueden utilizar como si fueran un parametro mas de "data", pero tienen la ventaja de que solo se lanzan cuando la recarga del html afecte a algun parametro que sea utilizado en esa funcion, evitando
+		relanzar la funcion cuando no sea necesario.

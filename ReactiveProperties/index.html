@@ -20,6 +20,12 @@
 
             <input type="text" v-model="name">
             <p>{{ name }}</p>
+
+            <button v-on:click="counter++">Increase</button>
+            <button v-on:click="counter--">Decrease</button>
+            <button v-on:click="secondCounter++">Increase Second</button>
+            <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+            <p>Result: {{ result() }} | {{ output }}</p>
         </div>
         <script>
             new Vue({
@@ -28,7 +34,8 @@
                     counter: 0,
                     x: 0,
                     y: 0,
-                    name: 'Max'
+                    name: 'Max',
+                    secondCounter: 0
                 },
                 methods: {
                     increase: function(step, event) {
@@ -43,6 +50,16 @@
                     },
                     alertMe: function() {
                         alert('Alert!');
+                    },
+                    result: function() {
+                        console.log('Method');
+                        return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
+                    }
+                },
+                computed: {
+                    output: function() {
+                        console.log('Computed');
+                        return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
                     }
                 }
             });
