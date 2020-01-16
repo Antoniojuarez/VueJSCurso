@@ -26,6 +26,7 @@ Html
 		Otra forma de cambiar la clase css dinamicamente es mediante un input, vinculamos una variable de vue al valor de un input y a su vez esta variable la usamos como nombre de la clase css. De tal manera que si
 			cambiamos el valor del imput cambiara la clase css. Se puede combinar con el codigo javascript, el codigo dara prioridad a la condicion de la izquierda y en caso de no cumplirse seguira con la siguiente.
 		No es necesario aplicar estos valores a la clases css, podemos aplicarlos a una propiedad css concreta con el campo :style
+		Si anidamos propiedades en un string aplicara cada una de ellas.
 
 Javascript
 
