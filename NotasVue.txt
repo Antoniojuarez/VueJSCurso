@@ -22,8 +22,9 @@ Html
 	+	Vue permite añadir codigo javascript directamente en la plantilla
 	+	Para tratar una clase css con codigo javascript vue, se tiene que marcar como :class="", dentro se indicara con codigo javascript la clase css y se indicara la variable de data asociada a esta clase
 			:class="{claseCss: atributoData}"
-		
 		Si se quiere simplificar el codigo html, se puede crear un objeto (computedPropertie) que tenga la logica de las clases css y llamar directamente a este objeto
+		Otra forma de cambiar la clase css dinamicamente es mediante un input, vinculamos una variable de vue al valor de un input y a su vez esta variable la usamos como nombre de la clase css. De tal manera que si
+			cambiamos el valor del imput cambiara la clase css. Se puede combinar con el codigo javascript, el codigo dara prioridad a la condicion de la izquierda y en caso de no cumplirse seguira con la siguiente.
 
 Javascript
 
