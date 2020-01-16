@@ -20,6 +20,8 @@ Html
 	+	v-once -> Hace que el elemento entre {{ }} no vuelva a ser renderizado en pantalla en caso de que sufra algun cambio en el codigo, de tal manera podremos con una variable mostrar dos valores
 	+	v-html -> Para poder añadir codigo html dinamicamente, hay que utilizarlo con cuidado ya que nos exponemos a ataques cross site scripting
 	+	Vue permite añadir codigo javascript directamente en la plantilla
+	+	Para tratar una clase css con codigo javascript vue, se tiene que marcar como :class="", dentro se indicara con codigo javascript la clase css y se indicara la variable de data asociada a esta clase
+			:class="{claseCss: atributoData}"
 
 Javascript
 
@@ -63,3 +65,4 @@ new Vue({
 																																			}
 																																		},
 		Estos funcionan de manera inversa a las computed properties, esperan que la propiedad cambie para lanzar el metodo llamado como ella.
+	
