@@ -28,7 +28,7 @@ Html
 		No es necesario aplicar estos valores a la clases css, podemos aplicarlos a una propiedad css concreta con el campo :style
 		Si anidamos propiedades en un string aplicara cada una de ellas.
 	+	v-if="variable" -> Utiliza una variable boolean del data para decidir si adjunta el elemento al html o no, no lo deja invisible o deshabilitado, si la variable es falsa el elemento no estara en el DOM
-	+	v-else -> Trabaja en funcion del elemento v-if predecesor y actua exactamente igual que el v-if
+	+	v-else -> Trabaja en funcion del elemento v-if predecesor y actua exactamente igual que el v-if. A partir de la version 2.1 esta disponible la directiva v-else-if
 
 Javascript
 
