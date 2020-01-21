@@ -36,6 +36,10 @@ Html
 		Si queremos acceder al indice de la variable debemos cambiar la sintaxis
 			<li v-for="(variable, indice) in ingredients">{{ ingredient }} ({{ i }})</li> -> Es importante el orden siempre debe ir primero el valor de la variable y despues el indice
 		Podemos utilizar la sintaxis v-for dentro de un elemento template html y si llamamos a las variables dentro nos generara tantas como elementos tenga la lista
+		Tambien se puede utilizar el v-for para iterar entre una lista de objetos, con la misma sintaxis. Si queremos acceder a los valores de estos objetos deberemos anidar dos v-for
+			<li v-for="objeto in objetos">
+				<div v-for="(valor, key, index) in objeto>{{ key }}: {{ value }} ({{ index }})</div>
+			</li> -> En este caso el orden tambien es importante, siempre debe ser valor, clave, indice
 
 Javascript
 
