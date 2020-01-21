@@ -33,6 +33,8 @@ Html
 	+	v-show="variable" -> Trabaja igual que v-if pero en este caso el elemento no desaparece del DOM simplemente se oculta añadiendole el estilo css "display: none;"
 	+	v-for -> Esta instruccion añadida en el elemento <li> de una lista html, nos permite iterar entre los valores de una variable de data de javascript, para ello usaremos la siguiente sitaxis:
 			<li v-for="variable in lista">{{ variable }}</li>
+		Si queremos acceder al indice de la variable debemos cambiar la sintaxis
+			<li v-for="(variable, indice) in ingredients">{{ ingredient }} ({{ i }})</li> -> Es importante el orden siempre debe ir primero el valor de la variable y despues el indice
 
 Javascript
 
