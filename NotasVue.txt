@@ -42,6 +42,9 @@ Html
 			</li> -> En este caso el orden tambien es importante, siempre debe ser valor, clave, indice
 		Por ultimo tambien podemos iterar entre una lista de numeros con la sintaxis:
 			<div v-for="variable in 10">{{ variable }}</div> -> El numero que se indica es el valor hasta el que se debe iterar
+		Al trabajar con las listas creadas por el comando v-for, solo tendra en cuenta el indice de los elementos de tal manera que si intentamos reordenar es posible que chafe los valores de las posiciones en lugar de
+		mover los elementos de tal manera que puede causar problemas. Para evitar esto hay que añadir una clave unica a los elementos de la lista, la sintaxis para realizar esto es:
+			v-for="(ingredient, i) in ingredients" :key="ingredient" -> Esta key servira para mover el elemento al completo en caso de trabajar con la lista
 
 Javascript
 
