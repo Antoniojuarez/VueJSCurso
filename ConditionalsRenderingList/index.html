@@ -17,12 +17,17 @@
             </template>
             <p v-show="show">Do you also see me?</p>
             <button @click="show = !show">Switch</button>
+
+            <ul>
+                <li v-for="ingredient in ingredients">{{ ingredient }}</li>
+            </ul>
         </div>
         <script>
             new Vue({
                 el: "#app",
                 data: {
-                    show: true
+                    show: true,
+                    ingredients: ['meat', 'fruit', 'cookies']
                 }
             });
         </script>

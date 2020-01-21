@@ -31,6 +31,8 @@ Html
 	+	v-else -> Trabaja en funcion del elemento v-if predecesor y actua exactamente igual que el v-if. A partir de la version 2.1 esta disponible la directiva v-else-if
 		El condicional se puede utilizar en un elemento div de tal forma que no muestre nada del interior de este, tambien existe a partir de html5 el elemento template el cual no es visible al inspeccionar el DOM
 	+	v-show="variable" -> Trabaja igual que v-if pero en este caso el elemento no desaparece del DOM simplemente se oculta añadiendole el estilo css "display: none;"
+	+	v-for -> Esta instruccion añadida en el elemento <li> de una lista html, nos permite iterar entre los valores de una variable de data de javascript, para ello usaremos la siguiente sitaxis:
+			<li v-for="variable in lista">{{ variable }}</li>
 
 Javascript
 
