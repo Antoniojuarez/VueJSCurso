@@ -40,6 +40,8 @@ Html
 			<li v-for="objeto in objetos">
 				<div v-for="(valor, key, index) in objeto>{{ key }}: {{ value }} ({{ index }})</div>
 			</li> -> En este caso el orden tambien es importante, siempre debe ser valor, clave, indice
+		Por ultimo tambien podemos iterar entre una lista de numeros con la sintaxis:
+			<div v-for="variable in 10">{{ variable }}</div> -> El numero que se indica es el valor hasta el que se debe iterar
 
 Javascript
 
